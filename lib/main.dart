@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,14 +23,84 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('assets/images/art.png'),
               ),
               Text(
-                'nitish',
+                'Nitish',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Pacifico',
                 ),
-              )
+              ),
+              Text(
+                'Flutter Developer',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico',
+                  letterSpacing: 2.0,
+                ),
+              ),
+
+              Card(
+                color: Colors.white,
+                // padding: const EdgeInsets.all(10.0), // not used for card
+                margin: const EdgeInsets.symmetric(
+                    horizontal: 25.0, vertical: 10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: const Row(
+                    children: const [
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                        size: 40.0,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '+91 7903205886',
+                        style: TextStyle(
+                            fontSize: 30.0,
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Shrikhand'),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                // padding: const EdgeInsets.all(10.0), //not used for card
+                margin: const EdgeInsets.symmetric(
+                    horizontal: 25.0, vertical: 10.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: const Row(
+                    children: [
+                      Icon(
+                        Icons.email,
+                        color: Colors.teal,
+                        size: 40.0,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        'abcd@gmail.com',
+                        style: TextStyle(
+                            fontSize: 30.0,
+                            color: Colors.teal,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Shrikhand'),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+
             ],
           ),
         ),
@@ -37,3 +108,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+// 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
